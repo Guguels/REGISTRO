@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Interés</title>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    color: #007bff;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  .btn {
+    width: 48%;
+  }
+
+  #result {
+    margin-top: 20px;
+    text-align: center;
+  }
+</style>
+
+</head>
+<body>
+  <br>
+  <br>
+  <h1>CALCULADORA INTERÉS</h1>
+
+<div class="container">
+  <form id="interestForm">
+    <div class="form-group">
+      <label for="capital">Capital:</label>
+      <input type="number" class="form-control" id="capital" name="capital" required>
+    </div>
+    <div class="form-group">
+      <label for="interestRate">Porcentaje de Interés:</label>
+      <input type="number" class="form-control" id="interestRate" name="interestRate" required>
+    </div>
+    <div class="form-group">
+      <label for="months">Número de meses:</label>
+      <input type="number" class="form-control" id="months" name="months" required>
+    </div>
+    <button type="button" class="btn btn-primary" id="simpleInterestBtn">Interés Simple</button>
+    <button type="button" class="btn btn-primary" id="compoundInterestBtn">Interés Compuesto</button>
+  </form>
+
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
